@@ -9,7 +9,23 @@
       background-size: cover;
       overflow: hidden;
     }
- 
+  /* Background movement effect */
+    @keyframes backgroundMove {
+      0% { background-position: center; }
+      50% { background-position: center 1%; }
+      100% { background-position: center; }
+    }
+    body {
+      animation: backgroundMove 10s infinite alternate ease-in-out;
+    }
+    /* Fade in effect */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
 </style>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
